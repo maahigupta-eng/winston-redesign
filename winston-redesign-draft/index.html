@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winston — Sovereignty Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <section class="gate" id="gate">
+    <div class="gate-bg" id="gateBg"></div>
+    <div class="orbital-globe" id="orbitalGlobe"></div>
+    <div class="gate-top">
+      <span>NYU Center for Global Affairs</span>
+      <span>Transnational Security · 2026</span>
+    </div>
+    <div class="world-clocks">
+      <div><b>New York</b><span id="clockNY">--:--</span><small>GMT-5</small></div>
+      <div><b>Geneva</b><span id="clockGeneva">--:--</span><small>GMT+2</small></div>
+      <div><b>Islamabad</b><span id="clockIslamabad">--:--</span><small>GMT+5</small></div>
+      <div><b>Delhi</b><span id="clockDelhi">--:--</span><small>GMT+5:30</small></div>
+    </div>
+    <main class="gate-center">
+      <p class="overline">Disciplining God</p>
+      <h1>Winston</h1>
+      <p class="subtitle">A cinematic operating system for sovereignty, misallocation, and geopolitical intelligence.</p>
+      <button class="pull-button" id="enterBtn"><span></span> Pull the thread</button>
+    </main>
+    <div class="gate-footer">Move your cursor. The globe follows. Scroll after entry.</div>
+  </section>
+
+  <div class="app-shell" id="appShell" aria-hidden="true">
+    <nav class="mobile-dock">
+      <a href="#winston">Winston</a><a href="#cases">Cases</a><a href="#demo">Demo</a><a href="#maahi">Maahi</a>
+    </nav>
+    <header class="site-header">
+      <button class="hamburger" id="menuBtn">☰</button>
+      <a href="#top" class="brand"><span class="sigil">W</span><div><strong>Winston</strong><small>Sovereignty Intelligence</small></div></a>
+      <nav id="mainNav">
+        <a href="#winston">Who is Winston?</a>
+        <a href="#journey">Guided Journey</a>
+        <a href="#cases">Map</a>
+        <a href="#demo">Visual Demo</a>
+        <a href="#maahi">Maahi</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero-noise"></div>
+      <div class="hero-copy reveal">
+        <p class="overline">Enter the framework</p>
+        <h2>What if sovereignty is not a legal status, but a system that must keep reproducing itself?</h2>
+        <p>Winston turns Maahi Gupta’s thesis into an interactive intelligence environment: material capacity, symbolic authority, contested sovereignty, shared sovereignty, and the cost of getting resource allocation wrong.</p>
+        <div class="hero-actions"><a class="btn primary" href="#journey">Start the tour</a><a class="btn" href="#demo">Open visual demo</a></div>
+      </div>
+      <div class="floating-panel reveal delay">
+        <div class="panel-top"><span>LIVE CASE MODEL</span><b>Pakistan</b></div>
+        <div class="risk-orbit"><span>Material</span><span>Symbolic</span><strong>64</strong></div>
+        <p>Winston separates capacity from legitimacy before recommending intervention design.</p>
+      </div>
+    </section>
+
+    <section class="section winston-page" id="winston">
+      <div class="section-kicker">Who is Winston?</div>
+      <div class="split">
+        <div class="large-copy reveal">
+          <h2>Not a chatbot. A reasoning instrument.</h2>
+          <p>Winston asks whether an actor can discipline the material and symbolic conditions required for its survival over time. The point is not to make sovereignty poetic. The point is to make a difficult theory usable.</p>
+          <p>Use this page as the new replacement for the cramped About sidebar. It should be its own full page: larger text, cleaner spacing, readable cards, and a clear explanation of what Winston does.</p>
+        </div>
+        <div class="brick-stack reveal delay">
+          <article><b>01</b><h3>Diagnose</h3><p>Identify whether the problem is legal, material, symbolic, contested, shared, or falsely territorial.</p></article>
+          <article><b>02</b><h3>Allocate</h3><p>Compare the intervention mix against the sovereignty condition: money, logistics, trust, recognition, and institutional authority.</p></article>
+          <article><b>03</b><h3>Explain</h3><p>Turn thesis logic into visual, teachable outputs for policy, risk, and institutional decision-making.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-kicker">Guided Journey</div>
+      <h2 class="section-title reveal">A website that guides people instead of dumping tabs on them.</h2>
+      <div class="timeline reveal">
+        <button data-step="0" class="active">1 · Meet Winston</button>
+        <button data-step="1">2 · Define sovereignty</button>
+        <button data-step="2">3 · Test a case</button>
+        <button data-step="3">4 · See misallocation</button>
+        <button data-step="4">5 · Meet Maahi</button>
+      </div>
+      <div class="journey-card reveal" id="journeyCard"></div>
+    </section>
+
+    <section class="section map-section" id="cases">
+      <div class="section-kicker">Clickable Case Map</div>
+      <div class="split map-split">
+        <div class="map-stage reveal" id="caseMap">
+          <div class="map-grid"></div>
+          <button class="map-pin pakistan" data-case="Pakistan">Pakistan</button>
+          <button class="map-pin ukraine" data-case="Ukraine">Ukraine</button>
+          <button class="map-pin meta" data-case="Meta">Meta</button>
+          <button class="map-pin un" data-case="UN Offices">UN</button>
+        </div>
+        <div class="case-card reveal delay" id="caseCard"></div>
+      </div>
+    </section>
+
+    <section class="section demo" id="demo">
+      <div class="section-kicker">Visual Demo</div>
+      <h2 class="section-title reveal">Replace default graphs with animated sovereignty visuals.</h2>
+      <div class="demo-grid">
+        <article class="glass-card reveal"><h3>Material / Symbolic Split</h3><canvas id="splitChart"></canvas></article>
+        <article class="glass-card reveal delay"><h3>Misallocation Flow</h3><div class="flow"><span>Actual budget</span><i></i><span>Wrong sovereignty problem</span><i></i><span>Corrected mix</span></div></article>
+        <article class="conversation-card reveal"><h3>Conversation</h3><p class="winston-line">Ask Winston about Ukraine, Pakistan, Meta, UN missions, or any case where authority is reproduced through both resources and belief.</p><div class="chat-input">ask winston anything about sovereignty… <button>Send</button></div></article>
+      </div>
+    </section>
+
+    <section class="section maahi" id="maahi">
+      <div class="section-kicker">Maahi / Builder Page</div>
+      <div class="photo-river" aria-label="Personal photo gallery placeholders">
+        <div style="background-image:url('assets/images/maahi-1.jpg')"></div>
+        <div style="background-image:url('assets/images/maahi-2.jpg')"></div>
+        <div style="background-image:url('assets/images/maahi-3.jpg')"></div>
+        <div style="background-image:url('assets/images/maahi-4.jpg')"></div>
+      </div>
+      <div class="large-copy reveal">
+        <h2>Use the photos as atmosphere, not a dump.</h2>
+        <p>This section is built for your personal photos already in GitHub. Rename four strong photos to <code>maahi-1.jpg</code>, <code>maahi-2.jpg</code>, <code>maahi-3.jpg</code>, and <code>maahi-4.jpg</code>, or change those filenames in the HTML. They fade and drift behind the builder story.</p>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
