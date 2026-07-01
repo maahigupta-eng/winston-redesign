@@ -3,135 +3,195 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Winston — Sovereignty Intelligence</title>
+  <title>Winston — Disciplining God</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="cursor-glow" id="cursorGlow"></div>
-  <section class="gate" id="gate">
-    <div class="gate-bg" id="gateBg"></div>
-    <div class="orbital-globe" id="orbitalGlobe"></div>
-    <div class="gate-top">
-      <span>NYU Center for Global Affairs</span>
-      <span>Transnational Security · 2026</span>
-    </div>
-    <div class="world-clocks">
-      <div><b>New York</b><span id="clockNY">--:--</span><small>GMT-5</small></div>
-      <div><b>Geneva</b><span id="clockGeneva">--:--</span><small>GMT+2</small></div>
-      <div><b>Islamabad</b><span id="clockIslamabad">--:--</span><small>GMT+5</small></div>
-      <div><b>Delhi</b><span id="clockDelhi">--:--</span><small>GMT+5:30</small></div>
-    </div>
-    <main class="gate-center">
-      <p class="overline">Disciplining God</p>
-      <h1>Winston</h1>
-      <p class="subtitle">A cinematic operating system for sovereignty, misallocation, and geopolitical intelligence.</p>
-      <button class="pull-button" id="enterBtn"><span></span> Pull the thread</button>
-    </main>
-    <div class="gate-footer">Move your cursor. The globe follows. Scroll after entry.</div>
-  </section>
+  <div class="grain"></div>
+  <div class="cursor-orb" aria-hidden="true"></div>
 
-  <div class="app-shell" id="appShell" aria-hidden="true">
-    <nav class="mobile-dock">
-      <a href="#winston">Winston</a><a href="#cases">Cases</a><a href="#demo">Demo</a><a href="#maahi">Maahi</a>
-    </nav>
-    <header class="site-header">
-      <button class="hamburger" id="menuBtn">☰</button>
-      <a href="#top" class="brand"><span class="sigil">W</span><div><strong>Winston</strong><small>Sovereignty Intelligence</small></div></a>
-      <nav id="mainNav">
-        <a href="#winston">Who is Winston?</a>
-        <a href="#journey">Guided Journey</a>
-        <a href="#cases">Map</a>
-        <a href="#demo">Visual Demo</a>
-        <a href="#maahi">Maahi</a>
-      </nav>
+  <section id="gate" class="gate section active">
+    <div class="gate-bg" data-parallax>
+      <div class="orbital orbital-one"></div>
+      <div class="orbital orbital-two"></div>
+      <div class="orbital orbital-three"></div>
+      <div class="photo-ghost ghost-a"></div>
+      <div class="photo-ghost ghost-b"></div>
+      <div class="photo-ghost ghost-c"></div>
+    </div>
+
+    <header class="gate-header">
+      <div>NYU Center for Global Affairs</div>
+      <div>Transnational Security · 2026</div>
     </header>
 
-    <section class="hero" id="top">
-      <div class="hero-noise"></div>
-      <div class="hero-copy reveal">
-        <p class="overline">Enter the framework</p>
-        <h2>What if sovereignty is not a legal status, but a system that must keep reproducing itself?</h2>
-        <p>Winston turns Maahi Gupta’s thesis into an interactive intelligence environment: material capacity, symbolic authority, contested sovereignty, shared sovereignty, and the cost of getting resource allocation wrong.</p>
-        <div class="hero-actions"><a class="btn primary" href="#journey">Start the tour</a><a class="btn" href="#demo">Open visual demo</a></div>
-      </div>
-      <div class="floating-panel reveal delay">
-        <div class="panel-top"><span>LIVE CASE MODEL</span><b>Pakistan</b></div>
-        <div class="risk-orbit"><span>Material</span><span>Symbolic</span><strong>64</strong></div>
-        <p>Winston separates capacity from legitimacy before recommending intervention design.</p>
-      </div>
-    </section>
+    <div class="clocks" aria-label="World clocks">
+      <div><span>New York</span><strong id="clockNY">--:--</strong><em>GMT-5</em></div>
+      <div><span>Geneva</span><strong id="clockGE">--:--</strong><em>GMT+2</em></div>
+      <div><span>Islamabad</span><strong id="clockIS">--:--</strong><em>GMT+5</em></div>
+      <div><span>Delhi</span><strong id="clockDE">--:--</strong><em>GMT+5:30</em></div>
+    </div>
 
-    <section class="section winston-page" id="winston">
-      <div class="section-kicker">Who is Winston?</div>
-      <div class="split">
-        <div class="large-copy reveal">
-          <h2>Not a chatbot. A reasoning instrument.</h2>
-          <p>Winston asks whether an actor can discipline the material and symbolic conditions required for its survival over time. The point is not to make sovereignty poetic. The point is to make a difficult theory usable.</p>
-          <p>Use this page as the new replacement for the cramped About sidebar. It should be its own full page: larger text, cleaner spacing, readable cards, and a clear explanation of what Winston does.</p>
+    <main class="gate-center">
+      <p class="kicker">Disciplining God</p>
+      <h1>Winston</h1>
+      <p class="gate-line">A sovereignty diagnosis system for mapping material capacity, symbolic authority, recognition, and contested claims.</p>
+      <button class="pull-thread" id="pullThread" type="button" aria-label="Pull the thread and go to access code">
+        <span></span>
+        <b>Pull the<br>thread</b>
+      </button>
+      <p class="scroll-hint">move your cursor · the globe follows</p>
+    </main>
+
+    <div class="access-panel" id="accessPanel">
+      <div class="access-card">
+        <p class="mono-heading">Access code required</p>
+        <p class="code-line">Your code: <strong id="generatedCode">WALKER-7759</strong></p>
+        <form id="accessForm">
+          <input id="codeInput" autocomplete="off" spellcheck="false" placeholder="TYPE CODE EXACTLY" />
+          <button type="submit">Enter →</button>
+        </form>
+        <p class="error" id="codeError"></p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="site-nav" id="siteNav">
+    <a href="#definition">Definition</a>
+    <a href="#method">Method</a>
+    <a href="#map">Map</a>
+    <a href="#cases">Cases</a>
+    <a href="#misallocation">Misallocation</a>
+    <a href="#conversation">Conversation</a>
+    <a href="#sources">Sources</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main id="site" class="site" aria-hidden="true">
+    <section id="definition" class="section hero-text">
+      <p class="kicker">What Winston is</p>
+      <h2>Winston maps how power reproduces itself.</h2>
+      <div class="two-col">
+        <p class="lead">Winston is built from Maahi Gupta’s thesis, <em>Disciplining God: The Meaning of Sovereignty</em>. It does not treat sovereignty as a static legal property possessed by states. It treats sovereignty as a continuous system of claims, recognition, discipline, control, and identity reproduction.</p>
+        <div class="definition-card float-card">
+          <span>Working definition</span>
+          <p>“Sovereignty is a continuous system in which an organizing body claims, in relation to another, the dynamic capacity to discipline and control the material and symbolic conditions necessary for its own reproduction over time.”</p>
         </div>
-        <div class="brick-stack reveal delay">
-          <article><b>01</b><h3>Diagnose</h3><p>Identify whether the problem is legal, material, symbolic, contested, shared, or falsely territorial.</p></article>
-          <article><b>02</b><h3>Allocate</h3><p>Compare the intervention mix against the sovereignty condition: money, logistics, trust, recognition, and institutional authority.</p></article>
-          <article><b>03</b><h3>Explain</h3><p>Turn thesis logic into visual, teachable outputs for policy, risk, and institutional decision-making.</p></article>
+      </div>
+      <p class="keep-scrolling">keep scrolling ↓</p>
+    </section>
+
+    <section id="method" class="section method-section">
+      <p class="kicker">How Winston thinks</p>
+      <h2>The diagnostic engine separates the problem before it recommends the response.</h2>
+      <div class="method-grid">
+        <article class="method-tile"><b>01</b><h3>Identify the organizing body</h3><p>State, corporation, armed group, institution, community, or coalition capable of making a claim over conditions of reproduction.</p></article>
+        <article class="method-tile"><b>02</b><h3>Map the claim</h3><p>Who claims authority, against whom, over what conditions, and through which networks of recognition or contestation?</p></article>
+        <article class="method-tile"><b>03</b><h3>Separate material and symbolic layers</h3><p>Material: territory, infrastructure, resources, personnel, finance. Symbolic: legitimacy, myth, narrative, identity, memory, recognition.</p></article>
+        <article class="method-tile"><b>04</b><h3>Classify the domain</h3><p>Zero-sum, shared, or entangled. This decides whether institutions can resolve, coordinate, or only manage.</p></article>
+      </div>
+      <div class="lens-card" id="lensCard">
+        <div class="lens-orb"><span id="lensScore">64</span></div>
+        <div>
+          <p class="mono-heading">Sovereignty lens</p>
+          <h3 id="lensTitle">Pakistan</h3>
+          <p id="lensText">Formal sovereignty remains intact, but material capacity is externally constrained while symbolic authority is fractured across military-civilian legitimacy, language, and generational identity.</p>
         </div>
       </div>
     </section>
 
-    <section class="section journey" id="journey">
-      <div class="section-kicker">Guided Journey</div>
-      <h2 class="section-title reveal">A website that guides people instead of dumping tabs on them.</h2>
-      <div class="timeline reveal">
-        <button data-step="0" class="active">1 · Meet Winston</button>
-        <button data-step="1">2 · Define sovereignty</button>
-        <button data-step="2">3 · Test a case</button>
-        <button data-step="3">4 · See misallocation</button>
-        <button data-step="4">5 · Meet Maahi</button>
-      </div>
-      <div class="journey-card reveal" id="journeyCard"></div>
-    </section>
-
-    <section class="section map-section" id="cases">
-      <div class="section-kicker">Clickable Case Map</div>
-      <div class="split map-split">
-        <div class="map-stage reveal" id="caseMap">
-          <div class="map-grid"></div>
-          <button class="map-pin pakistan" data-case="Pakistan">Pakistan</button>
-          <button class="map-pin ukraine" data-case="Ukraine">Ukraine</button>
-          <button class="map-pin meta" data-case="Meta">Meta</button>
-          <button class="map-pin un" data-case="UN Offices">UN</button>
+    <section id="map" class="section map-section">
+      <p class="kicker">Clickable sovereignty map</p>
+      <h2>Click a case. Winston shows what the Westphalian model misses.</h2>
+      <div class="map-layout">
+        <div class="world-map" aria-label="Clickable map of Winston case studies">
+          <button class="pin pakistan active" data-case="pakistan"><span>Pakistan</span></button>
+          <button class="pin ukraine" data-case="ukraine"><span>Ukraine</span></button>
+          <button class="pin palestine" data-case="palestine"><span>Palestine</span></button>
+          <button class="pin myanmar" data-case="myanmar"><span>Myanmar / Meta</span></button>
+          <button class="pin iraq" data-case="isis"><span>ISIS</span></button>
+          <button class="pin global" data-case="smallpox"><span>Smallpox</span></button>
+          <div class="map-globe"></div>
         </div>
-        <div class="case-card reveal delay" id="caseCard"></div>
+        <aside class="case-panel float-card" id="mapPanel"></aside>
       </div>
     </section>
 
-    <section class="section demo" id="demo">
-      <div class="section-kicker">Visual Demo</div>
-      <h2 class="section-title reveal">Replace default graphs with animated sovereignty visuals.</h2>
-      <div class="demo-grid">
-        <article class="glass-card reveal"><h3>Material / Symbolic Split</h3><canvas id="splitChart"></canvas></article>
-        <article class="glass-card reveal delay"><h3>Misallocation Flow</h3><div class="flow"><span>Actual budget</span><i></i><span>Wrong sovereignty problem</span><i></i><span>Corrected mix</span></div></article>
-        <article class="conversation-card reveal"><h3>Conversation</h3><p class="winston-line">Ask Winston about Ukraine, Pakistan, Meta, UN missions, or any case where authority is reproduced through both resources and belief.</p><div class="chat-input">ask winston anything about sovereignty… <button>Send</button></div></article>
+    <section id="cases" class="section cases-section">
+      <p class="kicker">Case studies</p>
+      <h2>Same framework. Different sovereignty problem.</h2>
+      <div class="case-tabs" id="caseTabs"></div>
+      <div class="case-story" id="caseStory"></div>
+    </section>
+
+    <section id="misallocation" class="section misallocation-section">
+      <p class="kicker">Resource allocation</p>
+      <h2>The point is not prediction. The point is alignment.</h2>
+      <p class="lead narrow">Winston asks whether institutional money is being spent on the actual conditions being fought over. Humanitarian spending can keep people alive while leaving the symbolic conflict that produces the war untouched. The tool flags that misalignment before the response design hardens.</p>
+      <div class="flow-board">
+        <div class="flow-card danger"><span>Current response</span><strong>$1.2B</strong><p>Material security / humanitarian management</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-card good"><span>Diagnostic redirect</span><strong>10%</strong><p>Legitimacy, identity repair, political capacity, narrative infrastructure</p></div>
+        <div class="flow-card verdict"><span>Verdict</span><p>The framework does not claim audited savings. It shows where the response is misaligned with the nature of the sovereignty contest.</p></div>
       </div>
     </section>
 
-    <section class="section maahi" id="maahi">
-      <div class="section-kicker">Maahi / Builder Page</div>
-      <div class="photo-river" aria-label="Personal photo gallery placeholders">
-        <div style="background-image:url('assets/images/maahi-1.jpg')"></div>
-        <div style="background-image:url('assets/images/maahi-2.jpg')"></div>
-        <div style="background-image:url('assets/images/maahi-3.jpg')"></div>
-        <div style="background-image:url('assets/images/maahi-4.jpg')"></div>
-      </div>
-      <div class="large-copy reveal">
-        <h2>Use the photos as atmosphere, not a dump.</h2>
-        <p>This section is built for your personal photos already in GitHub. Rename four strong photos to <code>maahi-1.jpg</code>, <code>maahi-2.jpg</code>, <code>maahi-3.jpg</code>, and <code>maahi-4.jpg</code>, or change those filenames in the HTML. They fade and drift behind the builder story.</p>
+    <section id="conversation" class="section conversation-section">
+      <p class="kicker">Ask Winston</p>
+      <h2>Conversation should feel like analysis, not a black text box.</h2>
+      <div class="chat-shell">
+        <div class="chat-output" id="chatOutput">
+          <div class="winston-message"><b>Winston</b><p>Ask me about sovereignty, misallocation, material and symbolic conditions, Meta, ISIS, Pakistan, Ukraine, Palestine, smallpox, or the UN.</p></div>
+        </div>
+        <div class="prompt-row">
+          <button data-prompt="What is sovereignty in this framework?">definition</button>
+          <button data-prompt="Map Pakistan's sovereignty conditions.">Pakistan</button>
+          <button data-prompt="Why is Meta a sovereign actor?">Meta</button>
+          <button data-prompt="What does Ukraine reveal?">Ukraine</button>
+        </div>
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" placeholder="ask Winston anything about sovereignty..." />
+          <button>Send</button>
+        </form>
       </div>
     </section>
-  </div>
+
+    <section id="gallery" class="section gallery-section">
+      <p class="kicker">Field notes / images</p>
+      <h2>Photos should work like memory, not a dump folder.</h2>
+      <p class="lead narrow">This section pulls from your repo’s <code>images/</code> folder. Replace or add files there and the visual river becomes the atmospheric layer for Winston’s story.</p>
+      <div class="photo-river">
+        <img src="images/871f50f2-8a19-4230-82bd-47fd2374157e.JPG" alt="Winston image one" />
+        <img src="images/a2beff7e-e657-4601-a748-b6581e91e9c8 2.JPG" alt="Winston image two" />
+        <img src="images/d0cf431c-ba4e-440d-b5f1-0399c92791dd 2.JPG" alt="Winston image three" />
+        <img src="images/F551369F-A4A1-4C58-9C0D-D694063D6545.JPG" alt="Winston image four" />
+        <img src="images/IMG_3080 2.JPG" alt="Winston image five" />
+        <img src="images/IMG_3081.JPG" alt="Winston image six" />
+        <img src="images/IMG_3082.JPG" alt="Winston image seven" />
+        <img src="images/IMG_3083.JPG" alt="Winston image eight" />
+      </div>
+    </section>
+
+    <section id="sources" class="section sources-section">
+      <p class="kicker">Sources and intellectual architecture</p>
+      <h2>Winston’s claims come from the thesis, not vibes.</h2>
+      <div class="source-grid" id="sourceGrid"></div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <p class="kicker">About Maahi / About Winston</p>
+      <h2>Winston is what happened when the thesis needed to become usable.</h2>
+      <div class="about-grid">
+        <div class="about-block"><h3>Maahi Gupta</h3><p>Graduate of NYU’s Center for Global Affairs, working across global risk, transnational security, data, energy, and political theory. Winston began as a way to make a sovereignty thesis legible outside the classroom.</p></div>
+        <div class="about-block"><h3>Thesis</h3><p><em>Disciplining God: The Meaning of Sovereignty</em> won the NYU SPS Best Thesis/Capstone Award. It argues that sovereignty is not a static state property but a relational system of material and symbolic reproduction.</p></div>
+        <div class="about-block"><h3>Winston</h3><p>Winston is the diagnostic interface: a way to test whether a conflict is zero-sum, shared, or entangled, and whether institutional resources are being directed toward the right conditions.</p></div>
+      </div>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
