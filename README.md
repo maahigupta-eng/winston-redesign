@@ -1,22 +1,15 @@
-# Winston v2 build
+# Winston v2 Faithful Build
 
-Upload the CONTENTS of this folder to the root of the test repo, not the enclosing folder.
+This build uses the old Winston HTML as the source of truth and applies visual/readability upgrades on top.
 
-Root should look like:
-- index.html
-- styles.css
-- script.js
-- README.md
-- images/  (keep your existing folder with Maahi/Winston images)
+What changed:
+- Removed the concept-build placeholder scoring problem by using old Winston as the base.
+- Preserved old conversation logic, Chart.js graphs, misallocation tabs, sources, case-study pages, and thesis trace.
+- Added cleaner dark-blue/gold visual system, mouse-reactive ambient background, larger text, stronger yellow section labels, redesigned case buttons, and mobile readability fixes.
+- Added instruction in Winston's prompt to avoid invented scores, live-data claims, citations, API access, or case facts.
 
-This build references the images already in your repo:
-- images/871f50f2-8a19-4230-82bd-47fd2374157e.JPG
-- images/a2beff7e-e657-4601-a748-b6581e91e9c8 2.JPG
-- images/d0cf431c-ba4e-440d-b5f1-0399c92791dd 2.JPG
-- images/F551369F-A4A1-4C58-9C0D-D694063D6545.JPG
-- images/IMG_3080 2.JPG
-- images/IMG_3081.JPG
-- images/IMG_3082.JPG
-- images/IMG_3083.JPG
+Deployment:
+Upload the contents of this folder to the root of the test repo. The repo root should show `index.html` directly.
 
-If an image does not show, check capitalization and spaces in the filename.
+Note:
+This does not restore API keys or external services by itself. If the previous live site depended on Netlify functions/API keys for Claude, S&P, Moody's, or live FX data, those functions and environment variables must also exist in the deployed repo/site settings.
